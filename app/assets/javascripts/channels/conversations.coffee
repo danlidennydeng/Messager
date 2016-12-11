@@ -24,7 +24,7 @@ jQuery(document).on 'turbolinks:load', ->
       @perform 'send_message', message: message, conversation_id: conversation_id
 
   $(document).on 'click', '#notification .close', ->
-    $(this).parents('#notification').fadeOut(1000)
+    $(this).('body').html()
 
   if messages.length > 0
     messages_to_bottom()
