@@ -1,6 +1,8 @@
 development:
-  adapter: async
-
+  #adapter: async
+  adapter: redis
+  url: <%= ENV["REDISCLOUD_URL"] %>
+  
 test:
   adapter: async
 
